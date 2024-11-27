@@ -1,0 +1,19 @@
+<h2>Historia zapytań</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Waluta</th>
+        <th>Imię i nazwisko</th>
+        <th>Data</th>
+        <th>Wartość</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let request of requests">
+        <td>{{ request.currency }}</td>
+        <td>{{ request.name }}</td>
+        <td>{{ request.date }}</td>
+        <td>{{ request.value }}</td>
+    </tr>
+    </tbody>
+</table>
